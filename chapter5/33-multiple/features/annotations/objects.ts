@@ -1,5 +1,5 @@
 const profile = {
-  nameProfile: 'alex',
+  name: 'alex',
   age: 20,
   coords: {
     lat: 0,
@@ -10,9 +10,7 @@ const profile = {
   }
 };
 
-const { nameProfile, age }: {nameProfile:string; age: number } = profile;
+const { age, name }: { age: number; name: string } = profile;
 const {
   coords: { lat, lng }
 }: { coords: { lat: number; lng: number } } = profile;
-
-console.log(`${age} ${nameProfile}`);
